@@ -1,0 +1,81 @@
+import { Meta } from '@storybook/addon-docs';
+import './typography.css'
+import { FontWeightBold, FontWeightSemiBold, FontWeightMedium, FontWeightRegular } from "./text-styles/font-sizes.jsx";
+import { TextColors } from "./text-styles/text-colors.jsx";
+import { BgrColors } from "./text-styles/bgr-colors.jsx";
+
+<Meta title="Kids Story/Typography" />
+
+# Типографика
+
+[Дизайн-макет](https://www.figma.com/file/mMMRODuJ4yWrogtvo8JsQy/Kids-story?node-id=0%3A1) в Figma.
+
+На эту страницу выносятся основные элементы, связанные с типографикой. Включая названия шрифтов и ссылки на них,
+все размеры и цвета шрифтов, применяемые в дизайн-макете. Это позволяет унифицировать их использование, например, через css-переменные.
+
+- [Шрифты](#fonts)
+- [Размеры шрифтов](#font-sizes)
+- [Цветовые решения](#text-colors)
+- [Примеры использования](#usage-and-examples)
+- [Обратная связь](#feedback)
+
+<a name="fonts"></a>
+## Шрифты
+
+В дизайне применяются следующие шрифты:
+
+- **Montserrat** от Google Fonts ([официальная страница](https://fonts.google.com/specimen/Montserrat))
+
+Семейство шрифтов размещаем в папке проекта: `src/vendor/fonts`. В ней же создаем файл `fonts.css`:
+```css
+// fonts.css
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("./Montserrat/Montserrat-Black.ttf") format("truetype");
+}
+
+...и т.д. для каждого font-weight: 900, 800, 700, 600, 500, 400, 300, 200, 100
+```
+Шрифты подключаются в `src/index.css` после `normalize.css`:
+```css
+// index.css
+
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+#root {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+```
+Поскольку шрифт только один, то использовать css-переменные не нужно. Если бы шрифтов было несколько, можно было бы задать переменные. Например:
+```css
+--font-family: Montserrat, Roboto, Arial, sans-serif;
+--title-font-family: Roboto, Montserrat, Arial, sans-serif;
+```
+
+<a name="font-sizes"></a>
+## Размеры шрифтов
+Насыщенность шрифта: **700 (Bold):**
+<FontWeightBold />
+Насыщенность шрифта: **600 (semiBold):**
+<FontWeightSemiBold />
+Насыщенность шрифта: **500 (Medium):**
+<FontWeightMedium />
+Насыщенность шрифта: **400 (Regular):**
+<FontWeightRegular />
+
+<a name="text-colors"></a>
+## Цветовые решения
+
+**для фона:**
+<BgrColors />
+
+**для текста:**
+<TextColors />
+
+## Примеры использования <a name="usage-and-examples"></a>
+## Обратная связь <a name="feedback"></a>
+
