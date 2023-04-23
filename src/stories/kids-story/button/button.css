@@ -1,4 +1,5 @@
 .button {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   padding: 10px;
   box-sizing: border-box;
   border: none;
@@ -6,7 +7,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 .button:hover {
@@ -44,7 +44,7 @@
   height: 40px;
 }
 
-.button_color_blue {
+/* .button_color_blue {
   background-color: #8081BD;
   color: #fff;
 }
@@ -67,4 +67,4 @@
 
 .intro__form-button {
   text-transform: uppercase;
-}
+} */

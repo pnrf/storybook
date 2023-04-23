@@ -1,0 +1,9 @@
+/** общие стили */
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts/fonts.css');
+
+/** button */
+@import url('./button/button.css');
+
+/** link */
+@import url('./link/link.css');
