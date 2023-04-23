@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/addon-docs';
 
-import { Logo } from './logo.jsx';
+import { LogoLarge, LogoSmall } from './logo.jsx';
 
 <Meta title="Kids Story/Logo" />
 
@@ -10,7 +10,11 @@ import { Logo } from './logo.jsx';
 - Онлайн-сервис для оптимизации `svg`: [https://jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/);
 - Онлайн-сервис для оптимизации `jpg, png`: [https://tinypng.com](https://tinypng.com);
 
-### Варианты использования
-<Logo />
+------
 
+### Примеры использования
+- в Header и в Footer десктопной версии сайта:
+<LogoLarge />
 
+- в Header и в Footer мобильной версии сайта:
+<LogoSmall />

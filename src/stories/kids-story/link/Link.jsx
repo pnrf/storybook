@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../index.css';
 
 /**
- * Вариации ссылок, использованных в дизайн-макете.
+ * Вариации cсылок, использованных в дизайн-макете.
  */
 export const Link = ({
   label,
@@ -18,18 +18,18 @@ export const Link = ({
     <a
       className={['link'].join(' ')}
       style={{
-        role: 'button',
-        href: '#',
-        tabIndex: '_blank',
-        rel: "noopener noreferrer",
-        ariaLabel: "Личный кабинет",
-        title: "Перейти к авторизации в личный кабинет",
         backgroundColor: `${backgroundColor && backgroundColor}`,
         color: `${fontColor && fontColor}`,
         fontWeight: `${fontWeight && fontWeight}`,
         fontSize: `${fontSize && fontSize}`,
         lineHeight: `${lineHeight && lineHeight}`,
       }}
+      role='button'
+      href='/'
+      tabIndex='_blank'
+      rel="noopener noreferrer"
+      ariaLabel="Личный кабинет"
+      title="Перейти к авторизации в личный кабинет"
       {...props}
     >
       {label}
@@ -49,7 +49,7 @@ Link.propTypes = {
 Link.defaultProps = {
   label: 'Текст ссылки',
   backgroundColor: 'transparent',
-  fontColor: '#334155',
+  fontColor: '#8081BD',
   fontWeight: '600',
   fontSize: '20px',
   lineHeight: '24px'
