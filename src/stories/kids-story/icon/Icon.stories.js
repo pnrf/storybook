@@ -1,8 +1,8 @@
-import { Link } from './Link';
+import { Icon } from './Icon';
 
 export default {
-  title: 'Kids story/Link',
-  component: Link,
+  title: 'Kids story/Icon',
+  component: Icon,
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const defaultLink = {
+export const defaultIcon = {
   args: {
     label: 'Текст ссылки',
     backgroundColor: 'transparent',
@@ -21,4 +21,4 @@ export const defaultLink = {
   }
 };
 
-export * from './Link.stories.js';
+export * from './Icon.stories.js';

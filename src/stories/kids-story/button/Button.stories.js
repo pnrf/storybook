@@ -3,7 +3,7 @@ import { Button } from './Button';
 export default {
   title: 'Kids story/Button',
   component: Button,
-  tags: ['autodocs'], // Автоматически добавляет в меню файл Docs
+  tags: ['autodocs'],
   argTypes: {
     buttonType: { control: 'select'},
     customBackgroundColor: { control: 'color' },
@@ -14,9 +14,6 @@ export default {
   },
 };
 
-/**
- * Кнопка по умолчанию. Используется для тестирования в Storybook.
- */
 export const defaultButton = {
   args: {
     label: 'Кнопка',
@@ -44,8 +41,6 @@ export const signUpButton1 = {
     buttonSize: 'extra-small',
     backgroundColor: '#8081BD',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -65,8 +60,6 @@ export const signUpButton2 = {
     buttonSize: 'medium',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -86,8 +79,6 @@ export const signUpButton3 = {
     buttonSize: 'extra-small',
     backgroundColor: '#FFF',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -107,8 +98,6 @@ export const signUpButton4 = {
     buttonSize: 'large',
     backgroundColor: '#8081BD',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -128,8 +117,6 @@ export const signUpButton5 = {
     buttonSize: 'large',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -149,8 +136,6 @@ export const signUpButton6 = {
     buttonSize: 'xxxl',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -170,8 +155,6 @@ export const menuButton = {
     buttonSize: 'medium',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -191,8 +174,6 @@ export const feedbackFormButton1 = {
     buttonSize: 'large',
     backgroundColor: '#F6B31F',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -212,8 +193,6 @@ export const feedbackFormButton2 = {
     buttonSize: 'large',
     backgroundColor: '#F6B31F',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -233,8 +212,6 @@ export const feedbackFormButton3 = {
     buttonSize: 'large',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -254,8 +231,6 @@ export const sourceButton1 = {
     buttonSize: 'extra-large',
     backgroundColor: '#FFF',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -275,8 +250,6 @@ export const sourceButton2 = {
     buttonSize: 'extra-large',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '16px',
     lineHeight: '20px',
@@ -296,8 +269,6 @@ export const sourceButton3 = {
     buttonSize: 'medium',
     backgroundColor: '#FFF6D1',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -317,8 +288,6 @@ export const sourceButton4 = {
     buttonSize: 'medium',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -338,8 +307,6 @@ export const sourceButton5 = {
     buttonSize: 'small',
     backgroundColor: '#FDDC4E',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '12px',
     lineHeight: '15px',
@@ -359,8 +326,6 @@ export const moreButton1 = {
     buttonSize: 'large',
     backgroundColor: '#FFF',
     fontColor: '#334155',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '14px',
     lineHeight: '17px',
@@ -380,8 +345,6 @@ export const moreButton2 = {
     buttonSize: 'large',
     backgroundColor: '#EA5D4A',
     fontColor: '#FFF',
-    // customBackgroundColor: null,
-    // customFontColor: null,
     fontWeight: '700',
     fontSize: '14px',
     lineHeight: '17px',
@@ -390,39 +353,3 @@ export const moreButton2 = {
     onClick: undefined
   }
 };
-
-
-
-
-
-
-// export const bgrColor = {
-//   args: {
-//     type: 'button',
-//     size: 'large',
-//     label: 'Записаться',
-//     bgrColor: '#EA5D4A',
-//     fontColor: '#FFF',
-//     backgroundColor: null,
-//     color: null,
-//     isUppercase: 'true',
-//     fontWeight: '700',
-//     fontSize: '16px',
-//     lineHeight: '20px',
-//     onClick: undefined,
-//   },
-// };
-
-// export const Large = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// };
-
-// export const Small = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };

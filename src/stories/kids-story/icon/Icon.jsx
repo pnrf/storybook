@@ -1,46 +1,58 @@
-export const Icon = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../index.css';
+
+/**
+ * - На этой странице вы можете протестировать компонент `Icon`.
+ * - Пропсы заданы по умолчанию. Вам остается лишь выбрать нужные значения.
+ * - Чтобы обнулить значения, кликните по изогнутой стрелке (справа вверху таблицы).
+ */
+export const Icon = ({
+  label,
+  backgroundColor,
+  fontColor,
+  fontWeight,
+  fontSize,
+  lineHeight,
+  ...props }) => {
+
   return (
-    <div className={`list-item ${state}`}>
-      <label
-        htmlFor="checked"
-        aria-label={`archiveTask-${id}`}
-        className="checkbox"
-      >
-        <input
-          type="checkbox"
-          disabled={true}
-          name="checked"
-          id={`archiveTask-${id}`}
-          checked={state === "TASK_ARCHIVED"}
-        />
-        <span
-          className="checkbox-custom"
-          onClick={() => onArchiveTask(id)}
-        />
-      </label>
-
-      <label htmlFor="title" aria-label={title} className="title">
-        <input
-          type="text"
-          value={title}
-          readOnly={true}
-          name="title"
-          placeholder="Input title"
-          style={{ textOverflow: 'ellipsis' }}
-        />
-      </label>
-
-      {state !== "TASK_ARCHIVED" && (
-        <button
-          className="pin-button"
-          onClick={() => onPinTask(id)}
-          id={`pinTask-${id}`}
-          aria-label={`pinTask-${id}`}
-          key={`pinTask-${id}`}
-        >
-          <span className={`icon-star`} />
-        </button>
-      )}
-    </div>
+    <a
+      className={['Icon'].join(' ')}
+      style={{
+        backgroundColor: `${backgroundColor && backgroundColor}`,
+        color: `${fontColor && fontColor}`,
+        fontWeight: `${fontWeight && fontWeight}`,
+        fontSize: `${fontSize && fontSize}`,
+        lineHeight: `${lineHeight && lineHeight}`,
+      }}
+      role='button'
+      href='/'
+      tabIndex='_blank'
+      rel="noopener noreferrer"
+      ariaLabel="Личный кабинет"
+      title="Перейти к авторизации в личный кабинет"
+      {...props}
+    >
+      {label}
+    </a>
   );
+};
+
+Icon.propTypes = {
+  label: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
+  fontColor: PropTypes.string,
+  fontWeight: PropTypes.oneOf(['400', '500', '600', '700']),
+  fontSize: PropTypes.string,
+  lineHeight: PropTypes.string,
 }
+
+Icon.defaultProps = {
+  label: 'Текст иконки',
+  backgroundColor: 'transparent',
+  fontColor: '#8081BD',
+  fontWeight: '600',
+  fontSize: '20px',
+  lineHeight: '24px'
+};
