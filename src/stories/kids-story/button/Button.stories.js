@@ -353,3 +353,136 @@ export const moreButton2 = {
     onClick: undefined
   }
 };
+
+
+
+// export const renderButtonsBySize = (Story, ButtonStories) => {
+
+//   const buttonsObj = {
+//     signUpButton1, signUpButton2, signUpButton3, signUpButton4, signUpButton5, signUpButton6
+//   };
+
+//   const makeNewButtonObj = () => {
+//     const newButtonsObj = {};
+
+//     for (let key in buttonsObj) {
+//     newButtonsObj[key] = buttonsObj[key]['args']['buttonSize'];
+//   };
+
+//     return newButtonsObj;
+//   };
+
+
+//   console.log('aaa', makeNewButtonObj());
+
+//   const createSizesArr = () => {
+//     const sizesArr = Object.values(makeNewButtonObj());
+//     let sortedSizesArr = sizesArr.filter((element, index, self) => {
+//       return index === self.indexOf(element);
+//     });
+
+//     return sortedSizesArr;
+//   };
+
+//   console.log('bbb', createSizesArr());
+
+//   const sortButtonsBySize = () => {
+//     const newButtonsObj = makeNewButtonObj();
+//     const sortedSizesArr = createSizesArr();
+
+//     const sortedButtonsArr = [];
+
+//     for (let size in sortedSizesArr) {
+//       for (let element in newButtonsObj) {
+//         if (sortedSizesArr[size] === newButtonsObj[element]) {
+//           console.log('success', size, sortedSizesArr[size], newButtonsObj[element], element);
+//           sortedButtonsArr.push(element);
+//         };
+//       };
+//     };
+
+//     return sortedButtonsArr;
+//   };
+
+//   console.log('ccc', sortButtonsBySize());
+
+
+
+
+//   const arr = sortButtonsBySize();
+
+//   arr.forEach(element => {
+//     return (
+//       <Story of={ButtonStories.element}/>
+//     );
+//   });
+// };
+
+
+
+
+
+
+
+
+
+  // const buttonsArr = [
+  //   signUpButton1, signUpButton2, signUpButton3, signUpButton4, signUpButton5, signUpButton6
+  // ];
+
+  // const sizesArr = buttonsArr.map(element => element.args.buttonSize).sort();
+
+  // const sortedSizesArr = new Set(sizesArr);
+
+  // const sortButtonsArr = () => {
+  //   const sortedButtonsArr = [];
+
+    // sortedSizesArr.forEach(size => {
+    //   buttonsArr.forEach(element => {
+    //     if(size === element.args.buttonSize) {
+    //       sortedButtonsArr.push(element);
+    //     };
+    //   });
+    // });
+
+  //   return sortedButtonsArr;
+  // };
+
+  // console.log('aaa', sortButtonsArr());
+
+  // const ButtonList = (Story, ButtonStories) => {
+  //   return (
+  //     <Story of={ButtonStories.signUpButton1} />
+  //   );
+  // };
+
+
+
+
+
+  // const buttonsArr = [
+  //   signUpButton1, signUpButton2, signUpButton3, signUpButton4, signUpButton5, signUpButton6
+  // ];
+
+  // const sortButtonsArr = (arr, prop) => {
+  //   prop = prop.split('.');
+  //   const len = prop.lenght;
+
+  //   arr.sort((a, b) => {
+  //     let i = 0;
+  //     while( i < len ) { a = a[prop[i]]; b = b[prop(i)]; i++; }
+  //     if ( a < b ) {
+  //       return -1;
+  //     } else if ( a > b ) {
+  //       return 1;
+  //     } else {
+  //       return 0;
+  //     }
+  //   });
+  //   return arr;
+  // };
+
+  // const newArr = sortButtonsArr(buttonsArr, 'args.buttonSize');
+
+
+

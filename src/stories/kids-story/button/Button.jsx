@@ -52,12 +52,12 @@ Button.propTypes = {
   * Эти опции не применяются, если выбран **customBackgroundColor**.
   * Нужно сбросить значения - загнутая стрелка вверху справа таблицы.
   */
-  backgroundColor: PropTypes.oneOf(['transparent', '#8081BD', '#EA5D4A', '#F6B31F']),
+  backgroundColor: PropTypes.oneOf(['transparent', '#FFF', '#FFF6D1', '#FDDC4E', '#8081BD', '#EA5D4A', '#F6B31F']),
     /**
   * Эти опции не применяются, если выбран **customFontColor**.
   * Нужно сбросить значения - загнутая стрелка вверху справа таблицы.
   */
-  fontColor: PropTypes.oneOf(['#FFF', '#000']),
+  fontColor: PropTypes.oneOf(['#FFF', '#334155']),
   customBackgroundColor: PropTypes.string,
   customFontColor: PropTypes.string,
   fontWeight: PropTypes.oneOf(['400', '500', '600', '700']),
