@@ -3,7 +3,7 @@
 @import url('../../vendor/fonts/fonts.css');
 
 /** button */
-@import url('./button/button.css');
+@import url('./components/button/button.css');
 
 /** link */
-@import url('./link/link.css');
+@import url('./components/link/link.css');

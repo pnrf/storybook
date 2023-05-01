@@ -1,7 +1,7 @@
 import { Icon } from './Icon';
 
 export default {
-  title: 'Kids story/Icon',
+  title: 'Kids story/Components/Icon',
   component: Icon,
   tags: ['autodocs'],
   argTypes: {

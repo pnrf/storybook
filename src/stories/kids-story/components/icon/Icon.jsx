@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../index.css';
+import '../../index.css';
 
 /**
  * - На этой странице вы можете протестировать компонент `Icon`.

@@ -1,40 +1,41 @@
-import { ArgTypes, Canvas, Controls, Meta, Source, Stories, Story, Subtitle, Title } from '@storybook/blocks';
+import { ArgTypes, Canvas, Meta, Source, Story, Subtitle, Title } from '@storybook/blocks';
 
 import * as ButtonStories from './Button.stories';
 import { Button } from './Button';
 
-import { renderButtonsBySize } from './filter.jsx';
-
 <Meta of={ButtonStories} name='Overview' />
 
-# Button
+<Title>Button</Title>
+<Subtitle>*- обзор основных характеристик компонента*</Subtitle>
 
-Обзор основных характеристик компонента `Button`
-
-- [Overview](#overview)
+- [Demo](#demo)
 - [Source](#source)
 - [Props](#props)
 - [HTML-синтаксис](#html)
 - [Варианты](#variants)
 
-
 ------
-### 1. Overview
+<a name="demo"></a>
+### 1. Demo
 <Canvas of={ButtonStories.defaultButton} />
 
+<a name="source"></a>
 ### 2. Source
 <Source of={ButtonStories.defaultButton} />
 
+<a name="props"></a>
 ### 3. Props
 ------
 <ArgTypes of={ButtonStories} exclude={['customBackgroundColor', 'customFontColor']}/>
 
+<a name="html"></a>
 ### 4. HTML-синтаксис
 ------
 ```HTML
 <a class="link" role="button" href="#" tabIndex="_blank" rel="noopener noreferrer" ariaLabel="Личный кабинет" title="Перейти к авторизации в личный кабинет">Личный кабинет</>
 ```
 
+<a name="variants"></a>
 ### 5. Варианты
 ------
 <div style={{display: 'flex', gap: '10px', flexWrap: 'wrap'}}>
@@ -61,7 +62,4 @@ import { renderButtonsBySize } from './filter.jsx';
   <Story of={ButtonStories.moreButton2} />
 </div>
 
-## Filter of buttons
-
-<renderButtonsBySize />
 
